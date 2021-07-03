@@ -2,14 +2,17 @@ import tkinter as tk
 
 window = tk.Tk()
 
-button = tk.Button(
-    text="Click me!",
-    width=25,
-    height=5,
-    fg="yellow",
-    bg="blue"
+label = tk.Label(
+    text="Name"
 )
 
-button.pack()
+entry = tk.Entry()
+
+name = entry.get()
+
+entry.insert(0, "Python")
+
+label.pack()
+entry.pack()
 
 window.mainloop()
